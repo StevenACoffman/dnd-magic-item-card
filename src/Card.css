@@ -160,11 +160,13 @@
 }
 
 .card__attunement_title {
-  top: 25.8%;
-  left: 60%;
+  top: 25%;
+  left: 73%;
   width: 45.5%;
-  max-width: 81%;
+  max-width: 20%;
   height: 5.5%;
+  word-wrap: break-word;
+  line-height: 1em;
 }
 
 .card__attunement_title_yes {
