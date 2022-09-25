@@ -55,6 +55,11 @@ export default class Card extends Component {
         </div>
         <img src={cards[cardType]} className="card__img" alt="card" />
         <div className={`card__attunement ${needsAttunement}`} />
+        <div className="card__type_title" style={{"font-size": "110rem"}}><div style={{"display": "block"}}><div>Type</div></div></div>
+        <div className="card__attunement_title" style={{"font-size": "110rem"}}><div style={{"display": "block"}}><div>Harmonisation?</div></div></div>
+        <div className="card__attunement_title_yes" style={{"font-size": "110rem"}}><div style={{"display": "block"}}><div>Oui</div></div></div>
+        <div className="card__attunement_title_no" style={{"font-size": "110rem"}}><div style={{"display": "block"}}><div>Non</div></div></div>
+        <div className="card__value_unit" style={{"font-size": "90rem"}}><div style={{"display": "block"}}><div>PO</div></div></div>
         {this.renderField('title')}
         {this.renderField('type')}
         {this.renderField('value', {

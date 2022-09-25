@@ -45,7 +45,12 @@
   /* outline: 3px solid rgba(0, 256, 0, 0.3); */
 }
 
-.card__title {
+.card__title,
+.card__type_title,
+.card__attunement_title,
+.card__attunement_title_yes,
+.card__attunement_title_no,
+.card__value_unit {
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -54,6 +59,7 @@
   align-content: center;
   flex-wrap: nowrap;
 }
+
 
 .card__title p,
 .card__type p,
@@ -72,7 +78,12 @@
   vertical-align: middle;
 }
 
-.card__description {
+.card__description,
+.card__type_title,
+.card__attunement_title,
+.card__attunement_title_yes,
+.card__attunement_title_no,
+.card__value_unit {
   font-family: 'Crimson Text', serif !important;
 }
 
@@ -125,6 +136,14 @@
   height: 5.5%;
 }
 
+.card--default .card__type_title {
+  top: 13.45%;
+  left: 27.5%;
+  width: 45.5%;
+  max-width: 81%;
+  height: 5.5%;
+}
+
 .card--default .card__description {
   top: 41%;
   left: 50%;
@@ -134,10 +153,34 @@
 }
 
 .card--default .card__value {
-  top: 27.05%;
+  top: 26.8%;
   left: 49%;
   width: 12.25%;
   height: 7.5%;
+}
+
+.card__attunement_title {
+  top: 26.8%;
+  left: 60.5%;
+  width: 45.5%;
+  max-width: 81%;
+  height: 5.5%;
+}
+
+.card__attunement_title_yes {
+  top: 33.45%;
+  left: 56.5%;
+  width: 45.5%;
+  max-width: 81%;
+  height: 5.5%;
+}
+
+.card__attunement_title_no {
+  top: 33.45%;
+  left: 67.5%;
+  width: 45.5%;
+  max-width: 81%;
+  height: 5.5%;
 }
 
 .card--default .card__attunement {
@@ -145,11 +188,19 @@
 }
 
 .card--default .card__attunement.false {
-  left: 88%;
+  left: 87.5%;
 }
 
 .card--default .card__attunement.true {
   left: 77.5%;
+}
+
+.card__value_unit {
+  top: 28.2%;
+  left: 41.5%;
+  width: 45.5%;
+  max-width: 81%;
+  height: 5.5%;
 }
 
 .card--default .card__icon {
